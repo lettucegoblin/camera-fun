@@ -23,7 +23,7 @@ dependencies {
 	testImplementation group: 'net.runelite', name:'jshell', version: runeLiteVersion
 }
 
-group = 'com.cameraeasing'
+group = 'com.camerafun'
 version = '1.8.1'
 sourceCompatibility = '1.8'
 
