@@ -2,9 +2,9 @@
 - Loop the effect for a trawler camera-esque experience
 
 <p align="center">
-  <img src="https://i.imgur.com/XW3noNG.gif" alt="Without Plugin Preview"/>
-  <img src="https://i.imgur.com/MliC8Ux.gif" alt="Elastic Preview"/>
   <img src="https://i.imgur.com/oSVwC73.gif" alt="Bounce Preview"/>
+  <img src="https://i.imgur.com/MliC8Ux.gif" alt="Elastic Preview"/>
+  <img src="https://i.imgur.com/XW3noNG.gif" alt="Without Plugin Preview"/>
 </p>
 
 Todo:
