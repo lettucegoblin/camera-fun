@@ -15,7 +15,7 @@ public interface CameraFunConfig extends Config
     )
     default CameraFunEaseType filterType()
     {
-        return CameraFunEaseType.easeOutBack;
+        return CameraFunEaseType.easeOutBounce;
     }
 
     @ConfigItem(
