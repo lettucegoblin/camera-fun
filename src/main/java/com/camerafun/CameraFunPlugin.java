@@ -1,4 +1,4 @@
-package com.cameraeasing;
+package com.camerafun;
 
 import com.google.inject.Provides;
 import javax.inject.Inject;
@@ -23,9 +23,9 @@ import java.time.Instant;
 
 @Slf4j
 @PluginDescriptor(
-        name = "Camera Easing"
+        name = "Camera Fun"
 )
-public class CameraEasingPlugin extends Plugin implements MouseListener
+public class CameraFunPlugin extends Plugin implements MouseListener
 {
     static final int period = 180;
     static final int fps = 60;
@@ -37,7 +37,7 @@ public class CameraEasingPlugin extends Plugin implements MouseListener
     private Client client;
 
     @Inject
-    private CameraEasingConfig config;
+    private CameraFunConfig config;
 
     @Inject
     private MouseManager mouseManager;
@@ -111,8 +111,8 @@ public class CameraEasingPlugin extends Plugin implements MouseListener
                         // Ease Left & right
                         yawShift = easeUtilities.easeInSine(sin);
                         break;
-                    case easeInOutSine:
-                        // bounce left, right twice
+                    case easeYoYo:
+                        // oscillate left, right twice
                         yawShift = easeUtilities.easeInOutSine(sin);
                         break;
                     case easeOutBounce:
@@ -237,7 +237,7 @@ public class CameraEasingPlugin extends Plugin implements MouseListener
     @Subscribe
     public void onConfigChanged(ConfigChanged event)
     {
-        if (!"cameraeasing".equals(event.getGroup()))
+        if (!"camerafun".equals(event.getGroup()))
         {
             return;
         }
@@ -247,12 +247,12 @@ public class CameraEasingPlugin extends Plugin implements MouseListener
         resetPivot();
     }
     @Provides
-    CameraEasingConfig provideConfig(ConfigManager configManager)
+    CameraFunConfig provideConfig(ConfigManager configManager)
     {
         //log.info("config updated");
         mouseActive = false;
         resetPivot();
-        return configManager.getConfig(CameraEasingConfig.class);
+        return configManager.getConfig(CameraFunConfig.class);
     }
 }
 

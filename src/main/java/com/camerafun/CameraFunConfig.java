@@ -1,11 +1,11 @@
-package com.cameraeasing;
+package com.camerafun;
 
 import net.runelite.client.config.*;
 
-import static com.cameraeasing.CameraEasingPlugin.*;
+import static com.camerafun.CameraFunPlugin.*;
 
-@ConfigGroup("cameraeasing")
-public interface CameraEasingConfig extends Config
+@ConfigGroup("camerafun")
+public interface CameraFunConfig extends Config
 {
     @ConfigItem(
             keyName = "filterType",
@@ -13,9 +13,9 @@ public interface CameraEasingConfig extends Config
             description = "Sets an camera ease type",
             position = 1
     )
-    default CameraEasingEaseType filterType()
+    default CameraFunEaseType filterType()
     {
-        return CameraEasingEaseType.easeOutBack;
+        return CameraFunEaseType.easeOutBack;
     }
 
     @ConfigItem(

@@ -1,13 +1,13 @@
-package com.cameraeasing;
+package com.camerafun;
 
 import net.runelite.client.RuneLite;
 import net.runelite.client.externalplugins.ExternalPluginManager;
 
-public class CameraEasingPluginTest
+public class CameraFunPluginTest
 {
 	public static void main(String[] args) throws Exception
 	{
-		ExternalPluginManager.loadBuiltin(CameraEasingPlugin.class);
+		ExternalPluginManager.loadBuiltin(CameraFunPlugin.class);
 		RuneLite.main(args);
 	}
 }

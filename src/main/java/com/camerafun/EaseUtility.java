@@ -1,4 +1,4 @@
-package com.cameraeasing;
+package com.camerafun;
 
 public class EaseUtility {
 

@@ -1,11 +1,11 @@
-package com.cameraeasing;
-public enum CameraEasingEaseType
+package com.camerafun;
+public enum CameraFunEaseType
 {
     easeOutBack,
     easeInSine,
     easeOutBounce,
     easeOutElastic,
-    easeInOutSine,
+    easeYoYo,
     NONE
 }
 /*
