@@ -71,6 +71,7 @@ public class CameraFunPlugin extends Plugin implements MouseListener
     @Override
     protected void shutDown() throws Exception
     {
+        mouseManager.unregisterMouseListener(this);
         resetPivot();
     }
 
